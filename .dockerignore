@@ -1,0 +1,57 @@
+# .dockerignore for Arabic TTS project
+
+# Ignore all files by default
+*
+
+# Allow specific files and directories
+!setup.py
+!README.md
+!tts_arabic/
+!requirements.txt  # if you have one
+
+# Development and IDE files
+.git/
+.gitignore
+.venv/
+venv/
+env/
+.env
+*.swp
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build and distribution files
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Test files
+tests/
+test/
+*.log
+*.tmp
+
+# Documentation
+docs/
+*.md
+
+# Data files (adjust if you need to include some data)
+*.wav
+*.mp3
+*.onnx
+*.pth
+*.pt
+
+# Large files that shouldn't be in the image
+*.zip
+*.tar.gz
+*.gz
+
+# Docker files (except the ones we need)
+Dockerfile
+!Dockerfile
+.dockerignore
